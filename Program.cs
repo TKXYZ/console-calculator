@@ -6,9 +6,9 @@ namespace Console_Calculator
 	{
 		static void Main(string[] args)
 		{
-            // Declares and initlaized var.
-            int num1 = 0;
-            int num2 = 0;
+            // Declares vars to be used in math.
+            double num1;
+            double num2;
 
             // Title.
             Console.WriteLine("C# Console Calculator");
@@ -16,11 +16,11 @@ namespace Console_Calculator
 
             // Prompts user for first number.
             Console.WriteLine("Type a number, then press Enter");
-            num1 = Convert.ToInt32(Console.ReadLine());
+            num1 = Convert.ToDouble(Console.ReadLine());
 
             // Prompts user for second number.
             Console.WriteLine("Type another number, then press Enter");
-            num2 = Convert.ToInt32(Console.ReadLine());
+            num2 = Convert.ToDouble(Console.ReadLine());
 
             // Prompts user for operator.
             Console.WriteLine("Choose an operator from the following list:");
