@@ -1,18 +1,20 @@
-﻿using System;
+﻿// Test test test
+
+using System;
 
 namespace Console_Calculator
 {
     // Handles bulk of calculation work.
     class Calculator
     {
-        // Function that will be called to do calculations.
-        public static double DoOperation(double num1, double num2, string op)
+        // Public function that will be called to do calculations; returns a double.
+        public static double DoOperation(double num1, double num2, string operation)
         {
             // Default value is "not-a-number" used if an operation such as divison could result in an error.
             double result = double.NaN;
 
             // Switch used to do the math.
-            switch (op)
+            switch (operation)
             {
                 case "+":
                     result = num1 + num2;
