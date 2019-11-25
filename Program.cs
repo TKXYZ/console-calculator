@@ -1,6 +1,4 @@
-﻿// Test test test
-
-using System;
+﻿using System;
 
 namespace Console_Calculator
 {
@@ -45,10 +43,10 @@ namespace Console_Calculator
     {
         static void Main(string[] args)
         {
-            bool endApp = false;
-            // Display title at the top of console
             Console.WriteLine("C# Console Calculator");
             Console.WriteLine("---------------------");
+
+            bool endApp = false;
 
             while (!endApp)
             {
@@ -61,8 +59,8 @@ namespace Console_Calculator
                 Console.WriteLine("Enter the first number: ");
                 numInput1 = Console.ReadLine();
 
+                // TryParse converts string representation of a number to its 32-bit int equivalent.
                 double cleanNum1 = 0;
-                // TryParse returns bool. If a string representation of a number can be converted, TryParse returns true.
                 while (!double.TryParse(numInput1, out cleanNum1))
                 {
                     Console.WriteLine("Invalid input. Please enter an integer: ");
@@ -117,67 +115,9 @@ namespace Console_Calculator
                 {
                     endApp = true;
                 }
-
-                // Friendly linespacing :)
                 Console.WriteLine("\n");
             }
             return;
         }
     }
 }
-
-//class Program
-//{
-//    static void Main(string[] args)
-//    {
-//        // Declares vars to be used in math.
-//        double num1;
-//        double num2;
-
-//        // Title.
-//        Console.WriteLine("C# Console Calculator");
-//        Console.WriteLine("---------------------\n");
-
-//        // Prompts user for first number.
-//        Console.WriteLine("Type a number, then press Enter");
-//        num1 = Convert.ToDouble(Console.ReadLine());
-
-//        // Prompts user for second number.
-//        Console.WriteLine("Type another number, then press Enter");
-//        num2 = Convert.ToDouble(Console.ReadLine());
-
-//        // Prompts user for operator.
-//        Console.WriteLine("Choose an operator from the following list:");
-//        Console.WriteLine("\t+ to Add");
-//        Console.WriteLine("\t- to Subtract");
-//        Console.WriteLine("\t* to Multiply");
-//        Console.WriteLine("\t/ to Divide");
-
-//        // Switch statement to do the math based on user input.
-//        switch (Console.ReadLine())
-//        {
-//            case "+":
-//                Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2));
-//                break;
-//            case "-":
-//                Console.WriteLine($"Your result: {num1} - {num2} = " + (num1 - num2));
-//                break;
-//            case "*":
-//                Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
-//                break;
-//            case "/":
-//                // Prompts user to enter non-zero divisor until they do so.
-//                while (num2 == 0)
-//                {
-//                    Console.WriteLine("Enter a non-zero divisor: ");
-//                    num2 = Convert.ToInt32(Console.ReadLine());
-//                }
-//                Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
-//                break;
-//        }
-
-//        // Wait for user response before closing.
-//        Console.WriteLine("Press any key to close the Calculator");
-//        Console.ReadKey();
-//    }
-//}
