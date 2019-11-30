@@ -50,9 +50,9 @@ namespace Console_Calculator
         {
             static void Main(string[] args)
             {
-                Console.WriteLine("C# Console Calculator");
-                Console.WriteLine("Written in C# by TK Tran");
-                Console.WriteLine("---------------------");
+                Console.WriteLine("Console Calculator \n");
+                Console.WriteLine("Written in C# by TK Tran \n");
+                Console.WriteLine("------------------------ \n\n\n");
 
                 // Continue loop until endApp is true.
                 bool endApp = false;
@@ -127,6 +127,7 @@ namespace Console_Calculator
                         // Flips endApp to true and ends while loop
                         endApp = true;
                     }
+                    // Friendly line spacing :]
                     Console.WriteLine("\n");
                 }
 
