@@ -1,2 +1,2 @@
 # Console_Calculator
-Simple console calculator written in Visual Studio using C#.
+Simple console calculator written in C# using Visual Studio.
